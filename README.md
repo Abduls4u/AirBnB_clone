@@ -133,5 +133,5 @@ update	Updates an instance based on the class name and id by adding or updating 
 Usage	update <class name> <id> <attribute name> "<attribute value>" ---or--- <class name>.update(<id>, <attribute name>, <attribute value>) --or-- <class name>.update(<id>, <dictionary representation>)
 -----	-----
 count	Retrieve the number of instances of a class.
-Usage	<class name>.count()![hbnb_screenshot](https://user-images.githubusercontent.com/111114700/217389311-8c016fa4-21ec-447d-8b52-fcd8add75e37.png)
+Usage	<class name>.count()
 
