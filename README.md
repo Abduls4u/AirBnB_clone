@@ -1,3 +1,4 @@
+![hbnb_screenshot](https://user-images.githubusercontent.com/111114700/217389405-3196c2fe-721f-4531-b2d8-0abc2de66f53.png)
 Project Description
 This is the first part of the AirBnB clone project where we worked on the backend of the project whiles interfacing it with a console application with the help of the cmd module in python.
 
@@ -27,9 +28,6 @@ These instructions will get you a copy of the project up and running on your loc
 
 Installing
 You will need to clone the repository of the project from Github. This will contain the simple shell program and all of its dependencies.
-
-git clone https://github.com/jzamora5/AirBnB_clone.git
-After cloning the repository you will have a folder called AirBnB_clone. In here there will be several files that allow the program to work.
 
 /console.py : The main executable of the project, the command interpreter.
 
@@ -62,7 +60,6 @@ $ ./console.py
 (hbnb) help
 
 Documented commands (type help <topic>):
-========================================
 EOF  help  quit
 
 (hbnb) 
@@ -75,7 +72,6 @@ $ echo "help" | ./console.py
 (hbnb)
 
 Documented commands (type help <topic>):
-========================================
 EOF  help  quit
 (hbnb) 
 $
@@ -103,14 +99,12 @@ Example:
 
 user@ubuntu:~/AirBnB$ ./console.py
 (hbnb) create BaseModel
-49faff9a-6318-451f-87b6-910505c55907
 user@ubuntu:~/AirBnB$ ./console.py
 
 or
 
 user@ubuntu:~/AirBnB$ ./console.py $ echo "create BaseModel" | ./console.py
 (hbnb)
-e37ebcd3-f8e1-4c1f-8095-7a019070b1fa
 (hbnb)
 user@ubuntu:~/AirBnB$ ./console.py
 Available commands and what they do
@@ -139,4 +133,5 @@ update	Updates an instance based on the class name and id by adding or updating 
 Usage	update <class name> <id> <attribute name> "<attribute value>" ---or--- <class name>.update(<id>, <attribute name>, <attribute value>) --or-- <class name>.update(<id>, <dictionary representation>)
 -----	-----
 count	Retrieve the number of instances of a class.
-Usage	<class name>.count()
+Usage	<class name>.count()![hbnb_screenshot](https://user-images.githubusercontent.com/111114700/217389311-8c016fa4-21ec-447d-8b52-fcd8add75e37.png)
+
