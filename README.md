@@ -140,3 +140,4 @@ Usage	update <class name> <id> <attribute name> "<attribute value>" ---or--- <cl
 -----	-----
 count	Retrieve the number of instances of a class.
 Usage	<class name>.count()
+![unnamed](https://user-images.githubusercontent.com/111114700/218267143-b2aa2e71-db6d-424d-a118-a84602bc18af.png)
