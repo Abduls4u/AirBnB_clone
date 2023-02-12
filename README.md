@@ -1,4 +1,3 @@
-![hbnb_screenshot](https://user-images.githubusercontent.com/111114700/217389405-3196c2fe-721f-4531-b2d8-0abc2de66f53.png)
 Project Description
 This is the first part of the AirBnB clone project where we worked on the backend of the project whiles interfacing it with a console application with the help of the cmd module in python.
 
@@ -134,4 +133,8 @@ Usage	update <class name> <id> <attribute name> "<attribute value>" ---or--- <cl
 -----	-----
 count	Retrieve the number of instances of a class.
 Usage	<class name>.count()
+<<<<<<< HEAD
 
+=======
+![unnamed](https://user-images.githubusercontent.com/111114700/218267143-b2aa2e71-db6d-424d-a118-a84602bc18af.png)
+>>>>>>> f0e30c2cbfa3a899bd7595f56fe5a79f21995f84
