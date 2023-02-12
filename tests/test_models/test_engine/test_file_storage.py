@@ -102,10 +102,13 @@ class TestFileStorage_methods(unittest.TestCase):
         with self.assertRaises(TypeError):
             models.storage.new(BaseModel(), 1)
 
+<<<<<<< HEAD
     def test_new_with_None(self):
         with self.assertRaises(AttributeError):
             models.storage.new(None)
 
+=======
+>>>>>>> 517b2be22d086109c9502a2968e3d1f998458bf3
     def test_save(self):
         bm = BaseModel()
         us = User()
