@@ -1,0 +1,19 @@
+#!/usr/bin/python3
+''' A module that contains a parent class (called BaseModel) to
+take care of the initialization, serialization and deserialization
+of future instances.
+Usage:
+    ./base_model.py
+Author:
+    Abdulsalam Abdulsomad .A. - May 11th, 2023.
+'''
+import uuid
+
+
+class BaseModel:
+    '''A class BaseModel that defines all common attributes/method
+s for other classes'''
+    def __init__(self, id, created_at, updated_at):
+        '''class constructor method'''
+        self.id = str(uuid.uuid4())
+        self.created_at
