@@ -14,11 +14,19 @@ from datetime import datetime
 class BaseModel:
     '''A class BaseModel that defines all common attributes/method
 s for other classes'''
-    def __init__(self):
+    def __init__(self, *args, **kwargs):
         '''class constructor method'''
-        self.id = str(uuid4())
-        self.created_at = datetime.now()
-        self.updated_at = datetime.now()
+        if len(kwargs) != 0:
+            for key, value in kwargs.items():
+                if key != '__class__':
+                    if key not in ('created_at', 'updated_at'):
+                        setattr(self, key, value)
+                    else:
+                        setattr(self, key, datetime.fromisoformat(value))
+        else:
+            self.id = str(uuid4())
+            self.created_at = datetime.now()
+            self.updated_at = datetime.now()
 
     def __str__(self):
         '''returns unofficial representation of the class'''
