@@ -25,7 +25,7 @@ s for other classes'''
                         setattr(self, key, datetime.fromisoformat(value))
         else:
             from models import storage
-            self.id = str (uuid4())
+            self.id = str(uuid4())
             self.created_at = datetime.now()
             self.updated_at = datetime.now()
             storage.new(self)
