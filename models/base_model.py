@@ -24,9 +24,11 @@ s for other classes'''
                     else:
                         setattr(self, key, datetime.fromisoformat(value))
         else:
-            self.id = str(uuid4())
+            from models import storage
+            self.id = str (uuid4())
             self.created_at = datetime.now()
             self.updated_at = datetime.now()
+            storage.new(self)
 
     def __str__(self):
         '''returns unofficial representation of the class'''
@@ -36,7 +38,9 @@ s for other classes'''
     def save(self):
         '''updates the public instance attribute updated_at with
 the current datetime'''
+        from models import storage
         self.updated_at = datetime.now()
+        storage.save()
 
     def to_dict(self):
         '''returns a dictionary containing all keys/values of
