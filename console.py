@@ -59,8 +59,7 @@ on the class name and id. Ex: $ show BaseModel 1234-1234-1234'''
                     key = "{}.{}".format(cls, cls_id)
                     if cls_id:
                         if key in dict_instance.keys():
-                            instance = eval(cls)()
-                            print(instance.__str__())
+                            print(dict_instance[key])
                         else:
                             print('** no instance found **')
                     else:
@@ -90,8 +89,8 @@ on the class name and id. Ex: $ show BaseModel 1234-1234-1234'''
                             print('** no instance found **')
                     else:
                         print('** instance id missing **')
-            else:
-                print("** class name missing **")
+        else:
+            print("** class name missing **")
 
     def do_all(self, cls):
         '''Prints all string representation of all instances
