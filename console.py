@@ -8,8 +8,10 @@ Author:
 '''
 import cmd
 from models.base_model import BaseModel
+from models.user import User
 CLASSES = [
-   'BaseModel',
+    'BaseModel',
+    'User'
     ]
 
 

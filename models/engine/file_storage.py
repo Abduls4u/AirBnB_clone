@@ -9,6 +9,7 @@ Author:
 import json
 import os
 from models.base_model import BaseModel
+from models.user import User
 
 
 class FileStorage:
@@ -39,7 +40,8 @@ file and deserializes JSON file to instances'''
 ON file (__file_path) exists ; otherwise, do nothing. If the file
 doesn’t exist, no exception should be raised)'''
         classes = {
-                    'BaseModel': BaseModel
+            'BaseModel': BaseModel,
+            'User': User
         }
         if os.path.exists(self.__file_path):
             with open(self.__file_path, 'r') as file:
