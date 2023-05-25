@@ -8,9 +8,13 @@ Author:
 '''
 import json
 import os
+from models.amenity import Amenity
 from models.base_model import BaseModel
+from models.city import City
+from models.place import Place
+from models.review import Review
+from models.state import State
 from models.user import User
-
 
 class FileStorage:
     '''A class FileStorage that serializes instances to a JSON
@@ -41,7 +45,12 @@ ON file (__file_path) exists ; otherwise, do nothing. If the file
 doesn’t exist, no exception should be raised)'''
         classes = {
             'BaseModel': BaseModel,
-            'User': User
+            'User': User,
+            'Place': Place,
+            'State': State,
+            'Amenity': Amenity,
+            'Review': Review,
+            'City': City
         }
         if os.path.exists(self.__file_path):
             with open(self.__file_path, 'r') as file:
